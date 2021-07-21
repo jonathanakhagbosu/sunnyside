@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 18px;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+}
+
+h5 {
+    letter-spacing: 3px;
+    opacity: 0.4;
+}
+
+p {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 600;
+    opacity: 0.6;
+}
+
+header {
+    height: 70vh;
+    background-image: url("images/icon-arrow-down.svg"), url("images/mobile/image-header.jpg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: center 37vh, top;
+    background-size: auto, 100vw 70vh;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 1.5rem;
+}
+
+#header-links {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    width: 90vw;
+    height: 43vh;
+    background-color: white;
+    z-index: 99;
+    padding: 2rem;
+}
+
+#header-links.show {
+    display: flex;
+}
+
+#header-links a {
+    text-decoration: none;
+    color: black;
+    font-family: "Barlow", sans-serif;
+    font-weight: 600;
+    opacity: 0.7;
+}
+
+button {
+    border: none;
+    border-radius: 10rem;
+    padding: 1.5rem 2.5rem;
+    font-size: 1rem;
+    font-family: "Fraunces", serif;
+    background-color: hsl(51, 100%, 49%);
+}
+
+.hero {
+    font-family: 'Fraunces', serif;
+    font-size: 1.5rem;
+    font-weight: 900;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    letter-spacing: 2px;
+}
+
+.transform, .stand-out {
+    background-color: hsla(210, 4%, 67%, 0.2);
+    text-align: center;
+}
+
+.transform img, 
+.stand-out img, 
+.graphic-design img, 
+.photography img {
+    width: 100vw;
+}
+
+.transform-text, .stand-out-text {
+    font-family: "Fraunces", serif;
+    padding: 2rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.graphic-design, .photography {
+    position: relative;
+}
+
+.graphic-design-text {
+    position: absolute;
+    bottom: 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    text-align: center;
+    padding: 0 1rem;
+
+    color: hsl(167, 40%, 24%);
+}
+
+.graphic-design-text p, .photography-text p {
+    opacity: 0.9;
+}
+
+.photography-text {
+    position: absolute;
+    bottom: 10%;
+    text-align: center;
+    padding: 0 1rem;
+    display: flex;
+    gap: 3rem;
+    flex-direction: column;
+    color: hsl(198, 62%, 26%);
+}
+
+.testimonials {
+    padding: 3rem 0;
+    text-align: center;
+    background-color: hsla(210, 4%, 67%, 0.2);
+}
+
+.profile-card {
+    padding: 2.5rem 1.5rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.card-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.profile-card img {
+    border-radius: 50%;
+    height: 6rem;
+}
+
+.position-desc {
+    font-weight: 600;
+    opacity: 0.3;
+    font-size: 13px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.gallery img {
+    width: 50vw;
+}
+
+footer {
+    background-color: hsla(168, 34%, 41%, 0.6);
+    color: hsl(168, 34%, 41%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem 2rem;
+}
+
+.footer-logo img {
+    color: hsl(168, 34%, 41%)
+}
+
+.footer-links {
+    padding: 2rem 0;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: hsl(168, 34%, 41%);
+    font-family: 'Barlow', sans-serif;
+    font-weight: 700;
+    padding: 0 15px;
+}
+
+.contact-links {
+    padding: 3rem 0;
+}
+
+.contact-links a img {
+    padding: 0 10px;
+}
